@@ -1,0 +1,30 @@
+<html>
+<body>
+<div class="a" id="a">
+  <img src="saymyname.jpeg" id="image"><br><br>
+  <h1 id="text1"> <B>say my  name</B> </h1>
+  <h1 id="text2" style="display:none;">you're heisenberg</h1>
+  <h1 id="text3" style="display:none;">you're goadamn right</h1>
+</div>
+
+<script>
+  document.getElementById("a").addEventListener("mouseover", ab);
+  document.getElementById("a").addEventListener("mouseout", bc);
+
+  function ab() {
+    document.getElementById('image').src = "your.jpeg"; 
+    document.getElementById('text1').style.display = "none"; 
+    document.getElementById('text2').style.display = "block";
+     document.getElementById('text3').style.display = "none";
+  }
+
+  function bc() { 
+    document.getElementById('image').src = "right.jpeg"; 
+    document.getElementById('text1').style.display = "none"; 
+    document.getElementById('text2').style.display = "none";
+     document.getElementById('text3').style.display = "block";
+  }
+</script>
+</body>
+</html>
+
